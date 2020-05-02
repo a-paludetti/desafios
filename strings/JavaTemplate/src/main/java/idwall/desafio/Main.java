@@ -37,12 +37,12 @@ public class Main {
         System.out.println("Inputs: ");
         System.out.println("Text: " + text);
         System.out.println("Limit: " + limit);
-        System.out.println("Should justify: " + justify);
-        System.out.println("=========================");
+//        System.out.println("Should justify: " + justify);
+        System.out.println("========================= \n");
 
         // Run IdwallFormatter
         final StringFormatter sf = new IdwallFormatter();
-        String outputText = sf.format(text);
+        String outputText = sf.format(limit, text);
 
         // Print output text
         System.out.println("Output: ");
